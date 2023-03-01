@@ -12,9 +12,9 @@ function App() {
   }
   return (
     <div className="App">
-      <h1>Probar mi suerte</h1>
+      <h1>Galletas de la Fortuna</h1>
       <button
-      onClick = {changeFortune}>Click</button>
+      onClick = {changeFortune}>Probar mi suerte</button>
       <FortuneCard
       quote = {quotes[index]}
       />
