@@ -1,6 +1,6 @@
 const FortuneCard = ({quote}) => {
     return (
-        <div>
+        <div className="FortuneCard">
             <p>{quote.phrase}</p>
         </div>
     );

@@ -1,6 +1,6 @@
 const FortuneAuthor = ({quote}) => {
     return (
-        <div>
+        <div className="FortuneAuthor">
             <span>{quote.author}</span>
         </div>
     );

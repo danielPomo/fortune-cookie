@@ -18,16 +18,21 @@ function App() {
 
   return (
     <div className="App" style={{ backgroundImage: `url(${imgPaths[bgIndex]})` }}>
-      <h1>Galletas de la Fortuna</h1>
-      <button
-      onClick = {changeFortuneAndBgImage}
-      >Probar mi suerte</button>
-      <FortuneCard
-      quote = {quotes[index]}
-      />
-      <FortuneAuthor
-      quote = {quotes[index]}
-      />
+      <h1 className="App__title">Galletas de la Fortuna</h1>
+      <div className="App__content">
+        <button
+        className="App__button"
+        onClick = {changeFortuneAndBgImage}
+        >Probar mi suerte</button>
+        <div className='App__wrapper'>
+        <FortuneCard
+        quote = {quotes[index]}
+        />
+        </div>
+      </div>
+        <FortuneAuthor
+        quote = {quotes[index]}
+        />
       </div>
   )
 }
