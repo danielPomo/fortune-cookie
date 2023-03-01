@@ -1,6 +1,6 @@
 import './App.css'
 import {useState} from "react"
-import FortuneButton from "./components/FortuneButton"
+import FortuneAuthor from "./components/FortuneAuthor"
 import FortuneCard from "./components/FortuneCard"
 import quotes from "./data/phrases.json"
 
@@ -16,6 +16,9 @@ function App() {
       <button
       onClick = {changeFortune}>Click</button>
       <FortuneCard
+      quote = {quotes[index]}
+      />
+      <FortuneAuthor
       quote = {quotes[index]}
       />
       </div>
