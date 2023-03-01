@@ -1,7 +1,8 @@
-const FortuneCard = () => {
+const FortuneCard = ({quote}) => {
     return (
         <div>
-            <p>Esta es tu fortuna</p>
+            <p>{quote.phrase}</p>
+            <span>{quote.author}</span>
         </div>
     );
 };
